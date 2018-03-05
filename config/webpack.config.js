@@ -89,7 +89,7 @@ CompileNotifyPlugin.prototype.apply = function MyPlugin(compiler) {
 
 module.exports = {
     entry: [
-        path.resolve(__dirname, './src/index.js')
+        path.resolve(__dirname, '../src/index.js')
     ],
     externals: {
         StripeCheckout: "StripeCheckout",
@@ -123,7 +123,7 @@ module.exports = {
         ]
     },
     output: {
-        path: path.join(__dirname, '..', 'build/src/scripts'),
+        path: path.join(__dirname, '..', 'build/src'),
         publicPath: './src',
         filename: '[name].js'
     },
